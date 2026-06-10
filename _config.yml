@@ -1,0 +1,54 @@
+title: "Copilot Studio 중급 핸즈온 Lab"
+description: >-
+  Power Automate + Copilot Studio로 HR 채용 자동화를 직접 만들어보는
+  시티즌 개발자 대상 중급 핸즈온 과정 (7시간).
+baseurl: "/cs_intermediate_lab"
+url: "https://lepela.github.io"
+
+theme: just-the-docs
+plugins:
+  - jekyll-feed
+
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+
+mermaid:
+  version: "10.9.1"
+
+aux_links:
+  "Microsoft Learn Copilot Studio":
+    - "https://learn.microsoft.com/ko-kr/microsoft-copilot-studio/"
+
+nav_sort: order
+color_scheme: light
+
+# ★ 필수 — 전 페이지 기본 레이아웃 (없으면 테마 미적용 = 맨 HTML 렌더링)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Just the Docs callouts — 교안 본문의 {: .note } / {: .warning } / {: .important } 렌더링 정의
+# (course_authoring_guide.md 페이지 구조 템플릿과 1:1 대응. 정의 없으면 평문 출력됨)
+callouts_level: quiet
+callouts:
+  note:
+    title: 팁
+    color: blue
+  warning:
+    title: 주의
+    color: red
+  important:
+    title: 핵심
+    color: yellow
+
+# 빌드 제외 (저작 가이드·내부 문서는 사이트에 배포하지 않음)
+exclude:
+  - _instructions/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

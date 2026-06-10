@@ -1,0 +1,9 @@
+_site/
+.jekyll-cache/
+
+# 내부 저작 가이드·템플릿 (로컬 전용 — 공개 저장소에 올리지 않음)
+_instructions/
+.jekyll-metadata
+vendor/
+.bundle/
+.sass-cache/
