@@ -1,0 +1,15 @@
+// ============================================
+// 커스텀 스타일 (Just the Docs 확장 포인트)
+// ============================================
+
+// 빌드 강도 배지 (*텍스트*{: .label .label-xxx } 표기 보정)
+// - kramdown 인라인 IAL이 em 태그로 변환되어 이탤릭이 걸리는 것 제거
+// - 크기: 테마 기본 .75rem → .6rem (custom.scss가 테마 뒤에 로드되어 동순위 !important를 이김)
+em.label {
+  font-style: normal;
+}
+
+// 테마 규칙이 .label:not(g) (구체성 0,1,1)라 .label(0,1,0)로는 못 이김 — 동일 구체성으로 맞춰 후순위 승리
+.label:not(g) {
+  font-size: 0.7rem !important;
+}
