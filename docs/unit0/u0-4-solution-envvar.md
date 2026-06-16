@@ -20,7 +20,7 @@ nav_order: 4
 
 - Power Platform **솔루션**이 무엇인지, 왜 솔루션 안에서 작업해야 하는지 이해한다.
 - 솔루션에 **환경 변수**를 등록하고, 하드코딩 대신 변수를 쓰는 이유를 이해한다.
-- 이후 유닛에서 흐름과 에이전트가 참조할 환경 변수 4개를 미리 만들어 둔다.
+- 이후 유닛에서 흐름과 에이전트가 참조할 환경 변수를 미리 만들어 둔다.
 
 ## ⏱ 예상 소요 시간
 
@@ -50,10 +50,7 @@ nav_order: 4
 
 | 등록할 환경 변수 | 타입 | 예시 값 |
 |---|---|---|
-| `HR_SPSiteURL` | 텍스트 | `https://tenant.sharepoint.com/sites/hr-lab2` |
-| `HR_ApplicantListName` | 텍스트 | `지원자 마스터` |
-| `HR_ResumeLibraryName` | 텍스트 | `이력서 보관함` |
-| `HR_RecruitmentFolder` | 텍스트 | `채용지원` |
+| `HR_SPSiteURL` | 텍스트 | `https://tenant.sharepoint.com/sites/hr-edu` |
 
 ---
 
@@ -84,42 +81,18 @@ nav_order: 4
 
 <!-- SCREENSHOT: u0-s26 — 솔루션 내부 '+ 새로 만들기 > 환경 변수' 메뉴 -->
 
-환경 변수 4개를 하나씩 등록합니다. 각각 아래 값을 입력하고 **저장**합니다.
+아래 값을 입력하고 **저장**합니다.
 
-**① HR_SPSiteURL**
+**HR_SPSiteURL**
 
 | 필드 | 값 |
 |---|---|
 | 표시 이름 | `HR_SPSiteURL` |
 | 이름 | `hr_SPSiteURL` (자동) |
 | 데이터 형식 | 텍스트 |
-| 현재 값 | `https://<테넌트>.sharepoint.com/sites/hr-lab2` |
+| 현재 값 | `https://<테넌트>.sharepoint.com/sites/hr-edu` |
 
-**② HR_ApplicantListName**
-
-| 필드 | 값 |
-|---|---|
-| 표시 이름 | `HR_ApplicantListName` |
-| 데이터 형식 | 텍스트 |
-| 현재 값 | `지원자 마스터` |
-
-**③ HR_ResumeLibraryName**
-
-| 필드 | 값 |
-|---|---|
-| 표시 이름 | `HR_ResumeLibraryName` |
-| 데이터 형식 | 텍스트 |
-| 현재 값 | `이력서 보관함` |
-
-**④ HR_RecruitmentFolder**
-
-| 필드 | 값 |
-|---|---|
-| 표시 이름 | `HR_RecruitmentFolder` |
-| 데이터 형식 | 텍스트 |
-| 현재 값 | `채용지원` |
-
-<!-- SCREENSHOT: u0-s27 — 환경 변수 4개 등록 완료된 솔루션 내부 목록 -->
+<!-- SCREENSHOT: u0-s27 — HR_SPSiteURL 환경 변수 등록 완료된 솔루션 내부 목록 -->
 
 {: .important }
 **현재 값(Current value)** 과 **기본값(Default value)** 은 다른 필드입니다. 이 실습에서는 **현재 값**에 입력합니다. 현재 값이 없으면 기본값을 참조하므로 어느 쪽에 넣어도 동작하지만, 환경마다 달라지는 값은 현재 값에 두는 것이 관례입니다.
@@ -129,7 +102,7 @@ nav_order: 4
 ## ✅ 체크포인트
 
 - [ ] `HR 채용 자동화` 솔루션이 메이커 포털에 생성되어 있습니다.
-- [ ] 솔루션 안에 환경 변수 4개(`HR_SPSiteURL` / `HR_ApplicantListName` / `HR_ResumeLibraryName` / `HR_RecruitmentFolder`)가 등록되어 있습니다.
+- [ ] 솔루션 안에 환경 변수 `HR_SPSiteURL`이 등록되어 있습니다.
 - [ ] 각 변수의 **현재 값**이 실제 환경에 맞게 입력되어 있습니다.
 
 ---
