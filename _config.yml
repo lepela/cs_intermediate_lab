@@ -38,6 +38,9 @@ callouts:
   note:
     title: 팁
     color: blue
+  time:
+    title: ""
+    color: blue
   warning:
     title: 주의
     color: red
@@ -52,3 +55,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
+  - docs/unit5/_old_v1/   # 구버전 4서브유닛 본문(2026-06-14 6서브유닛 재구성으로 보관)
